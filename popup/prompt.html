@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prompt</title>
+</head>
+<body>
+    <h2>javascript prompt</h2>
+    <button onclick="myFunction()">Click me</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction(){
+            var txt;
+            let name=prompt("pls,enter your name");
+            if(name==null ||name==""){
+                txt="User cancalled the prompt!!";
+            } else {
+                alert("Only name!!!");
+            }
+        }
+    </script>
+</body>
+</html>

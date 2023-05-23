@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"   referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Notes taking App</h1>
+    <div class="container">
+    <div class="left">
+     <form id="form">
+ <label for=""><b>Write your notes here:</b></label>
+ <br/><br/>
+        <textarea name="" id="input" cols="30" rows="10"></textarea>
+        <br/><br/>
+        <div id="msg"></div>
+        <button type="submit"><b>save</b></button>
+        </form>
+        </div>
+ <div class="right">
+  <h3>Your notes here</h3>
+   <div id="notes">
+    <div>
+        <p>Note 1</p>
+        <span class="options">
+        <i onClick="editNote(this)" class="fa-solid fa-pen-to-square"></i>
+        <i onClick="deleteNote(this)" class="fa-sharp fa-solid fa-trash"></i>
+        </span>
+    </div>
+    <div>
+        <p>Note 2</p>
+        <span class="options">
+        <i onClick="editNote(this)" class="fa-solid fa-pen-to-square"></i>
+        <i onClick="deleteNote(this)"class="fa-sharp fa-solid fa-trash"></i>
+        </span>
+    </div>
+ <div>
+        <p>Note 3</p>
+        <span class="options">
+        <i onClick="editNote(this)" class="fa-solid fa-pen-to-square"></i>
+        <i onClick="deleteNote(this)" class="fa-sharp fa-solid fa-trash"></i>
+            </span>
+         </div>
+        </div>
+      </div>
+    </div>
+   <scrit src=""></scrit>
+  </body>
+   <script src="main.js"></script>
+</html>
